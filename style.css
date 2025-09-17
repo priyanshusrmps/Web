@@ -70,8 +70,7 @@ button{
 }
 
 .bg_img{
-
-
+        
 }
 
 .gradient{
@@ -446,6 +445,8 @@ button{
 
 /*---------------------------------------- media_700px ---------------------------------------------------------------------------*/
 
+/*
+
 @media (max-width: 700px) {
 
         .products_head h2{
@@ -457,19 +458,23 @@ button{
                 }        
 }
 
-
+*/
 
 /*---------------------------------------- media_600px ---------------------------------------------------------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+        body{
+               
+        }
 
         .nav {
-                height: 10vw;
+                height: 15vw;
                 }
 
 
         .main-heading{
-                font-size: 9vw;
+                font-size: 8vw;
                 margin: 0 0 0 0.5vw;
         }
 
@@ -479,47 +484,104 @@ button{
 
         .logo img{
                 width: 7vw;
-        }    
+        }
+
+        .bg_img{
+
+        }  
+
+        .gradient{                
+                display: none;
+        }
+
+        #container{
+                height: 150vw;
+                color: black;
+                background-color: #253d2c;
+                top: 0;
+                position: absolute;
+                z-index: -1;
+        }
+
+        .type1{   
+                color: #fff;
+                background-color: transparent;
+        }
+
+        .tagline {
+                font-size: 8vw;
+                line-height: 1.2em;
+                margin:10px auto;
+                width: 90vw;
+                padding-top: 30vw;
+        }
+
+        .tagline h3{
+                margin: 3vw 0 1em 0;
+        }
+
 
         .text_beneath {
-                width: 55vw;
-                font-size: 1.6vw;
+                margin: 0 auto;
+                font-size: 3vw;
+                color: #fff;
+                width: 90vw;
+                text-align: justify;
         }
+
+        .text_beneath h5{
+                font-family: raleway;
+                font-weight: 400;
+                margin-block-start: 0;
+        }
+
+
 
         button{
-                width: 55vw;
-                height: 4vw;
-                font-size: 2vw;        
+                width: 90vw;
+                height: 8vw;
+                font-size: 4vw;
+                box-shadow: none;
+                border: none;
+                color: #2d2d2d;
+                background-color: #f2f2f2;
+                border-radius: 500px;
+
         }
 
-        .products_head h2{
-                        box-shadow: rgba(0, 0, 0, 0.45) 0px 6px 10px -3px;
-                        }
+        .why_head{
+                margin: 10vw 0 0 0;
+        }
 
-        .orcls h2{
-                        box-shadow: rgba(0, 0, 0, 0.45) 0px 6px 10px -3px;
-                }   
+        .why_head h4{
+                font-size: 5vw;
+                line-height: 1em;
+                color: #fff;
+        }   
 
         .why_undertxt h5{
+                color: #fff;
+                font-size: 2vw;
+                font-family: raleway;
+                font-weight: 500;
                 margin-block-start: .3em;
-                margin-block-end: 0em;
         }
 
 
         .why_cont{
-                height: 100vw;
+                height: 160vw;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 justify-content: space-evenly;
                 align-items: center;
-                margin: 0 0 0 0;
+                margin: 120vw 0 0 0;
         }
         .left_column_why{
                 width: 90vw;
-                height: 42.5vw;
+                height: 90vw;
                 margin: 0 0 0 0;
                 border: none;
-                box-shadow: 0 -.25vw 0vw #fff, 0 -1.5vw #253d3c, 0 -2.5vw #2e6f40, 0 -3.5vw #68ba7f;
+                box-shadow: 0 -.25vw 0vw #fff, 0 -1.5vw #253d3c, 0 -2.5vw #2e6f40, 0 -3.5vw #68ba7f, 0 .25vw 0vw #fff, 0 1.5vw #253d3c, 0 2.5vw #2e6f40, 0 3.5vw #68ba7f;
 
         }
         .right_column_why{
@@ -540,6 +602,24 @@ button{
                 width: 45%;
                 margin: 3vw 0 0 3vw;
         }
+
+        .products_head{
+                font-size: 5vw;
+        }
+
+        .products_head h2{
+                        margin: 0 auto 5vw auto;
+                        box-shadow: rgba(0, 0, 0, 0.45) 0px 6px 10px -3px;
+                        }
+
+        .orcls{
+                font-size: 5vw;
+
+        }                
+
+        .orcls h2{      
+                        box-shadow: rgba(0, 0, 0, 0.45) 0px 6px 10px -3px;
+                }
 
 
         .product_container{
