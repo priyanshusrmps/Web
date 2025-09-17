@@ -109,7 +109,9 @@ button{
 }
 
 .text_beneath h5{
-        font-weight: lighter;
+        font-family: raleway;
+        font-weight: 500;
+        text-align: justify;
         margin-block-start: .3em;
 }
 
@@ -136,7 +138,8 @@ button{
 }
 
 .why_undertxt h5{
-        font-weight: lighter;
+        font-family: raleway;
+        font-weight: 500;
         margin-block-start: .3em;
         margin-block-end: 1em;
 }
@@ -200,7 +203,7 @@ button{
 /* --------------------------------------------------------------- product section --------------------------------------------------------------------- */
 
 .products_head{
-        font-size:3.5vw;
+        font-size: 4vw;
         color: #2d2d2d;
         text-align: center;
 
@@ -280,7 +283,7 @@ button{
 /* -------------------------------------------------------------carousel ------------------------------------------------------------------ */
 
 .orcls{
-        font-size:3.5vw;
+        font-size: 4vw;
         color: #2d2d2d;
         text-align: center;
 
@@ -340,7 +343,7 @@ button{
 
 .slide{
         display: inline-block;
-        animation: 15s slide0 infinite linear;
+        animation: 24s slide0 infinite linear;
 
 }
 
@@ -470,7 +473,9 @@ button{
 
         .nav {
                 height: 15vw;
-                }
+                position: relative;
+                z-index: 5;
+             }
 
 
         .main-heading{
@@ -500,7 +505,7 @@ button{
                 background-color: #253d2c;
                 top: 0;
                 position: absolute;
-                z-index: -1;
+                z-index: 1;
         }
 
         .type1{   
@@ -563,7 +568,7 @@ button{
                 color: #fff;
                 font-size: 2vw;
                 font-family: raleway;
-                font-weight: 500;
+                font-weight: 400;
                 margin-block-start: .3em;
         }
 
@@ -575,7 +580,10 @@ button{
                 justify-content: space-evenly;
                 align-items: center;
                 margin: 120vw 0 0 0;
+                position: relative;
+                z-index: 1;
         }
+
         .left_column_why{
                 width: 90vw;
                 height: 90vw;
