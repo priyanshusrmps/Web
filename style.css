@@ -28,7 +28,6 @@ div{
 button{
         width: 30vw;
         height: 4vw;
-        margin: 0 0 0 5%;
         font-family: kollektif;
         font-size: 1.5vw;
         font-weight: bold;
@@ -37,6 +36,10 @@ button{
         background-color: transparent;
         border: .5vw solid #2d2d2d;
         box-shadow: .5vw -.5vw #ffe643;
+}
+
+a{
+        margin: 0 0 0 5%;        
 }
 
 /* --------------------------------------------------------------------------top bar and bg ----------------------------------------------------------------------- */
