@@ -1,12 +1,35 @@
-body{
-        font-family: kollektif;
+/*
+----------------------------------------------- latest changes ----------------------------------------
+
+cta button margin del--- a tag margin 0 0 0 5%
+
+for media screen <- 800px
+
+why_us right column {
+        border color, background color changes to #253d2c;        
+        box shadow: before ,-1vw -1vw #fff, 1vw -1vw #fff;
+}
+
+
+*/
+
+@font-face {
+        font-family: "MonaSans";
+        src: url("Fonts/MonaSans/MonaSans[wdth\,wght].ttf") format("truetype");
+}
+
+@font-face {
+        font-family: "FiraCode";
+        src: url("Fonts/Fira_Code_v6.2/FiraCode-VF.ttf") format("truetype");
+}
+
+body{   
+        font-family: "MonaSans", sans-serif ;
+        font-weight: 200;
         margin: 0;
         background-color: #fff;
         overflow-x: hidden;
         color: #2a3439;      
-}
-
-div{
 }
 
 .type1{   
@@ -28,7 +51,7 @@ div{
 button{
         width: 30vw;
         height: 4vw;
-        font-family: kollektif;
+        font-family: "Monasans", sans-serif;
         font-size: 1.5vw;
         font-weight: bold;
         cursor: pointer;
@@ -39,7 +62,7 @@ button{
 }
 
 a{
-        margin: 0 0 0 5%;        
+        margin: 0 0 0 5%;
 }
 
 /* --------------------------------------------------------------------------top bar and bg ----------------------------------------------------------------------- */
@@ -55,25 +78,22 @@ a{
         
 }
 
-
+/* 
 .main-heading{  
-                
+                font-family: "crude", sans-serif;
+                font-weight: lighter;
+                justify-content: center;
                 color: white;
-                font-size: 4vw;
+                font-size: 5vw;
                 margin: 0 0 0 0.5vw;
 }
 
 .logo{
         margin: 0 .5vw 0 0;
 }
-
+ */
 .logo img{
-        width: 4vw;
-
-}
-
-.bg_img{
-        
+        width: 20vw;
 }
 
 .gradient{
@@ -92,10 +112,11 @@ a{
 
 
 .tagline {
+        font-family: "Monasans", sans-serif;
         font-size: 3.2vw;
         line-height: 1.2em;
         margin: 12vw 0 0 5%;
-        color: #2e6f40;
+        color: #253d2c;
         width: 55vw;
 }
 
@@ -106,13 +127,14 @@ a{
 
 .text_beneath {
         margin: 0 0 0 5%;
-        font-size: 1.4vw;
+        font-size: 1.1vw;
+        line-height: 115%;
         color: #2d2d2d;
         width: 55vw;
 }
 
-.text_beneath h5{
-        font-family: raleway;
+.text_beneath p{
+        font-family: "Monasans", sans-serif;
         font-weight: 500;
         text-align: justify;
         margin-block-start: .3em;
@@ -122,6 +144,7 @@ a{
 /* -----------------------------------------------------------WHY US --------------------------------------------------------------------------------- */
 
 .why_head{
+        font-family: "Monasans", sans-serif;
         color: #2e6f40;
         margin: 15vw 0 0 0;
         font-size: 3.5vw;
@@ -135,14 +158,15 @@ a{
 }
 
 .why_undertxt{
-        color: #2d2d2d;
         text-align: center;
         font-size: 1.5vw;
 }
 
 .why_undertxt h5{
-        font-family: raleway;
-        font-weight: 500;
+        color: #2d2d2d;
+        font-family: "Monasans", sans-serif;
+        font-weight: 600;
+        line-height: 100%;
         margin-block-start: .3em;
         margin-block-end: 1em;
 }
@@ -188,24 +212,22 @@ a{
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
+        justify-content: space-between;
 }
 
 .right_column_why div{
+                font-family: "Monasans", sans-serif;
                 color: #fff;
                 font-size: 2.5vw;
                 font-weight: bold;
-
-
-                margin:1vw 0 0 1vw;
-
-
-
+                margin:0 0 0 0.5vw;
 }
 
 
 /* --------------------------------------------------------------- product section --------------------------------------------------------------------- */
 
 .products_head{
+        font-family: "Monasans", sans-serif ;
         font-size: 4vw;
         color: #2d2d2d;
         text-align: center;
@@ -286,7 +308,9 @@ a{
 /* -------------------------------------------------------------carousel ------------------------------------------------------------------ */
 
 .orcls{
+        font-family: "Monasans" , sans-serif;
         font-size: 4vw;
+        font-weight: bold;
         color: #2d2d2d;
         text-align: center;
 
@@ -352,7 +376,7 @@ a{
 
 .slide img{
         height: 6vw;
-        margin: 0 30px;
+        margin: 0 50px;
 
 }
 
@@ -379,7 +403,8 @@ a{
 }
 
 .details{
-        font-family: raleway;
+        font-family: "Monasans", sans-serif;
+        font-weight: 400;
         height: 100%;
         display: flex;
         flex-flow: column wrap ;
@@ -408,7 +433,7 @@ a{
 }
 
 .footer{
-        font-family: Hack ;
+        font-family: "Firacode" ;
         font-size: 1.2vw;
         background-color: #2d2d2d;
         width: 100vw;
@@ -466,13 +491,9 @@ a{
 
 */
 
-/*---------------------------------------- media_600px ---------------------------------------------------------------------------*/
+/*---------------------------------------- media_800px ---------------------------------------------------------------------------*/
 
 @media (max-width: 800px) {
-
-        body{
-               
-        }
 
         .nav {
                 height: 15vw;
@@ -481,22 +502,14 @@ a{
              }
 
 
-        .main-heading{
+       /*  .main-heading{
                 font-size: 8vw;
                 margin: 0 0 0 0.5vw;
-        }
-
-        .logo{
-                margin: 0 .5vw 0 0;
-        }
+        } */
 
         .logo img{
-                width: 7vw;
+                width: 40vw;
         }
-
-        .bg_img{
-
-        }  
 
         .gradient{                
                 display: none;
@@ -517,6 +530,7 @@ a{
         }
 
         .tagline {
+                font-family: "Monasans" , sans-serif;
                 font-size: 8vw;
                 line-height: 1.2em;
                 margin:10px auto;
@@ -537,9 +551,9 @@ a{
                 text-align: justify;
         }
 
-        .text_beneath h5{
-                font-family: raleway;
-                font-weight: 400;
+        .text_beneath p{
+                font-family: "Monasans" , sans-serif;
+                font-weight: 300;
                 margin-block-start: 0;
         }
 
@@ -568,8 +582,8 @@ a{
         .why_undertxt h5{
                 color: #fff;
                 font-size: 2vw;
-                font-family: raleway;
-                font-weight: 400;
+                font-family: "Monasans" , sans-serif;
+                font-weight: 500;
                 margin-block-start: .3em;
         }
 
@@ -599,17 +613,20 @@ a{
                 height: 42.5vw;
                 margin: 0 0 0 0;
                 border: .5vw solid #2e6f40;
-                box-shadow: 0 .25vw 0vw #fff, 0 1.5vw #253d3c, 0 2.5vw #2e6f40, 0 3.5vw #68ba7f;
-
+                box-shadow: 0 .25vw 0vw #fff, 0 1.5vw #253d3c, 0 2.5vw #2e6f40, 0 3.5vw #68ba7f, -1vw -1vw #fff, 1vw -1vw #fff;
                 display: flex;
                 flex-flow: row wrap;
-                align-items: flex-start;
+                align-items: center;
+                justify-content: space-evenly;
         }
+
         .right_column_why div{
+                font-family: "monasans" , serif;
                 color: #fff;
                 font-weight:bold;
-                width: 45%;
-                margin: 3vw 0 0 3vw;
+                width: 42.5vw;
+                margin: auto ;
+                
         }
 
         .products_head{
