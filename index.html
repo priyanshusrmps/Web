@@ -34,9 +34,11 @@
           <div class="absolute hidden md:block md:right-[calc(4%)] lg:right-6 top-0 h-full w-[1px] bg-dark-slate-grey"></div>
 
           <div class="mx-auto h-full pt-9 lg:pt-24 text-dark-slate-grey ">
-            <div class="mx-10 md:mx-16 lg:mx-32 border-1 border-dark-slate-grey aspect-[16/9] rounded-md overflow-hidden ">
-              <img src="./img/b2.svg" alt="" >
-        
+            <div class="mx-10 md:mx-16 lg:mx-32 border-1 border-dark-slate-grey rounded-md overflow-hidden ">
+              <!-- Mobile Img aspect-[4/3]-->
+                <img src="./img/b[4-3].svg" class="sm:hidden" >
+              <!-- Tab+Desktop Img  aspect-[16/9]-->
+                <img src="./img/b2.svg" class="hidden sm:block">
             </div>
               <p class="font-pfdisplay text-4xl lg:text-5xl 2xl:text-6xl font-bold mt-4 mx-10 md:mx-16 lg:mx-32" >Crafted for <span class="highlight ">Cargo</span>. Durable. Versatile. Timely. </p>
               <p class="text-base 2xl:text-lg font-mona font-normal mt-4 text-justify mx-10 md:mx-16 lg:mx-32 ">
@@ -63,34 +65,34 @@
             <div class="h-full mt-8 w-full md:w-[calc(100%-theme(spacing.14))] mx-auto border-y border-dark-slate-grey bg-endlessclouds font-pfdisplay ">
                 
                 <div class="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 mt-7 mx-7 h-full ">
-                  <div class="row-span-2 bg-hexagons-rev rounded-md whitespace-nowrap text-3xl sm:text-4xl lg:text-5xl text-white-smoke font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center"> <img class="h-[1em] mr-2" src="./Assets/Cert.svg" alt=""> Credible </div>
-                  <div class="bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> 20+ Years of Experience </div>
-                  <div class="col-start-2 row-start-2 overflow-hidden bg-dark-slate-grey whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Fully Licensed Manufacturer </div>
+                  <div class="row-span-2 bg-hexagons-rev rounded-md whitespace-nowrap [@media(min-width:360px)_and_(max-width:520px)]:text-2xl text-3xl sm:text-4xl lg:text-5xl text-white-smoke font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center"> <img class="h-[1em] mr-2" src="./Assets/Cert.svg" alt=""> Credible </div>
+                  <div class="bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> 20+ Years of Experience </div>
+                  <div class="col-start-2 row-start-2 overflow-hidden bg-dark-slate-grey sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Fully Licensed Manufacturer </div>
                 </div>
                 
                 <div class="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 mt-2 sm:mt-3 mx-7 h-full ">
-                      <div class=" bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Custom CAD-Driven Design </div>
-                      <div class="row-start-2 bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Diversified Catalogue </div>
-                      <div class="row-span-2 bg-graph-paper-reverse whitespace-nowrap text-3xl sm:text-4xl lg:text-5xl text-white-smoke font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/divC.svg" alt="">Customization </div>
+                      <div class=" bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Custom CAD-Driven Design </div>
+                      <div class="row-start-2 bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Diversified Catalogue </div>
+                      <div class="row-span-2 bg-graph-paper-reverse whitespace-nowrap [@media(min-width:360px)_and_(max-width:520px)]:text-2xl text-3xl sm:text-4xl lg:text-5xl text-white-smoke font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/divC.svg" alt="">Customization </div>
                 </div>
 
                 <div class="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 mt-2 sm:mt-3 mx-7 h-full ">
-                      <div class="row-span-2 bg-topography-reverse text-white-smoke whitespace-nowrap text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"><img class="h-[1em] mr-2" src="./Assets/Cir_blade.svg" alt=""> Craftsmanship</div>
-                      <div class="bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Premium Grade Wood Selection </div>
-                      <div class="col-start-2 row-start-2 bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Advanced Surface treatment </div>
+                      <div class="row-span-2 bg-topography-reverse text-white-smoke whitespace-nowrap [@media(min-width:360px)_and_(max-width:520px)]:text-2xl text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"><img class="h-[1em] mr-2" src="./Assets/Cir_blade.svg" alt=""> Craftsmanship</div>
+                      <div class="bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Premium Grade Wood Selection </div>
+                      <div class="col-start-2 row-start-2 bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Advanced Surface treatment </div>
                 </div>
 
 
                 <div class="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 mt-2 sm:mt-3 mx-7 h-full ">
-                      <div class=" bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Precise Manufacturing </div>
-                      <div class="row-start-2 bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Agile Manufacturing </div>
-                      <div class="row-span-2 bg-floatcogs-rev text-white-smoke whitespace-nowrap text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/manufacturing.svg" alt=""> Efficiency </div>
+                      <div class=" bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Precise Manufacturing </div>
+                      <div class="row-start-2 bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Agile Manufacturing </div>
+                      <div class="row-span-2 bg-floatcogs-rev text-white-smoke whitespace-nowrap [@media(min-width:360px)_and_(max-width:520px)]:text-2xl text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/manufacturing.svg" alt=""> Efficiency </div>
                 </div>
             
                 <div class="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-3 mt-2 sm:mt-3 mb-7 mx-7 h-full ">
-                      <div class="row-span-2 bg-banknote-rev text-white-smoke whitespace-nowrap text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/cmpprice.svg" alt="">Value</div>
-                      <div class="bg-dark-slate-grey text-base sm:text-xl lg:text-2xl text-white-smoke overflow-hidden whitespace-nowrap p-3 md:p-5 rounded-md flex justify-center"> Reliable On-Time Delivery </div>
-                      <div class="col-start-2 row-start-2 bg-dark-slate-grey overflow-hidden whitespace-nowrap text-base sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex justify-center"> Competitive Pricing </div>
+                      <div class="row-span-2 bg-banknote-rev text-white-smoke whitespace-nowrap [@media(min-width:360px)_and_(max-width:520px)]:text-2xl text-3xl sm:text-4xl lg:text-5xl font-pfdisplayitalic overflow-hidden flex flex-col sm:flex-row justify-center items-center rounded-md"> <img class="h-[1em] mr-2" src="./Assets/cmpprice.svg" alt="">Value</div>
+                      <div class="bg-dark-slate-grey [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke overflow-hidden sm:whitespace-nowrap p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Reliable On-Time Delivery </div>
+                      <div class="col-start-2 row-start-2 bg-dark-slate-grey overflow-hidden sm:whitespace-nowrap [@media(min-width:360px)_and_(max-width:639px)]:text-sm sm:text-xl lg:text-2xl text-white-smoke p-3 md:p-5 rounded-md flex sm:justify-center items-center"> Competitive Pricing </div>
                 </div>
 
 
@@ -131,7 +133,7 @@
                   <h3 class="text-xl lg:text-2xl font-pfdisplay font-semibold mb-1">
                     Wooden Pallets
                   </h3>
-                  <p class="text-xs md:text-sm font-mona">
+                  <p class="text-xs md:text-sm font-mona italic">
                     Heavy-duty pallets designed for industrial transport and export.
                   </p>
                 </div>
@@ -177,15 +179,17 @@
                 <!-- Machinery Packing -->
                 <div class="col-span-1 overflow-hidden rounded-md p-2 text-center bg-graph-paper-reverse flex flex-col justify-center items-center sm:row-start-2 sm:col-start-1 row-start-1 col-start-2">
                   <h3 class="font-semibold text-3xl lg:text-5xl font-pfdisplay text-white-smoke">150K+</h3>
-                    <p class="mt-1 text-xs md:text-sm font-mona text-white-smoke">
-                      Pallets Delivered – Proven expertise in industrial packaging.
-                    </p>
+                    <!-- <p class="mt-1 text-xs md:text-sm font-mona text-white-smoke"> -->
+                    <!--   Pallets Delivered –<span class="italic">Proven expertise in industrial packaging</span> -->
+                    <!-- </p> -->
+                    <p class="mt-1 text-xs md:text-sm font-mona font-bold text-white-smoke">Pallets Delivered</p>
+                    <p class="text-xs md:text-sm font-mona italic text-white-smoke">Proven expertise in industrial packaging</p>
                 </div>
 
                 <!-- Custom Sizes -->
                 <div class="col-span-1 overflow-hidden rounded-md p-2 text-center bg-graph-paper-reverse flex flex-col justify-center items-center row-start-7 col-start-1 sm:row-start-2 sm:col-start-4">
                   <h3 class="font-semibold text-xl lg:text-2xl font-pfdisplay text-white-smoke">Upto 20 Tons </h3>
-                    <p class="mt-1 text-xs md:text-sm font-mona text-white-smoke">
+                    <p class="mt-1 text-xs md:text-sm font-mona italic text-white-smoke">
                     Engineered for exceptional load-bearing capacity, delivering unmatched strength and reliability for heavy-duty operations.
                     </p>
                 </div>
@@ -246,7 +250,7 @@
                     <h3 class="text-xl lg:text-2xl font-pfdisplay font-semibold mb-1 text-white">
                       Wooden Crates
                     </h3>
-                    <p class="text-xs md:text-sm font-mona text-white-smoke">
+                    <p class="text-xs md:text-sm font-mona italic text-white-smoke">
                       Durable crates designed for heavy machinery and industrial goods.
                     </p>
                   </div>
@@ -256,7 +260,7 @@
                 <!-- Fast Delivery -->
                 <div class="col-span-2 overflow-hidden rounded-md p-3 lg:p-4 transition bg-topography-reverse flex flex-col justify-center sm:row-start-4 sm:col-start-1 row-start-4 col-start-1 ">
                   <h3 class="font-semibold text-xl lg:text-2xl font-pfdisplay text-white-smoke ">Engineered for Strength</h3>
-                  <p class="mt-1 mb-2 l:mb-3 text-xs md:text-sm font-mona text-white-smoke">
+                  <p class="mt-1 mb-2 l:mb-3 text-xs md:text-sm font-mona italic text-white-smoke">
                     “High-quality wooden pallets, crates, and boxes built to protect your products during storage, handling, and long-distance transport.”
                   </p>
                   <a href="https://forms.gle/esYWwhHxNsZBHqkb7" class="flex items-center justify-center py-3 bg-white-smoke text-dark-slate-grey font-mona font-semibold rounded-md transform transition-all duration-300 hover:-translate-y-1 ">
@@ -387,8 +391,8 @@
                           </div>
                         </div>
                         <div class="flex sm:flex-col flex-row text-sm ">
-                          <div class="flex items-center font-bold"><i class="fa-brands fa-square-whatsapp text-l"></i>&nbsp;+91-7206905535, +91-8708251854</div>
-                          <div class="flex items-center ml-3 sm:ml-0"><i class="fa-solid fa-phone-volume text-l"></i>&nbsp;01274-253206</div>
+                          <div class="flex items-center "><i class="fa-brands fa-square-whatsapp text-l"></i>&nbsp;<span class=" font-bold [@media(min-width:360px)_and_(max-width:433px)]:text-[12px]">+91-7206905535, +91-8708251854</span></div>
+                          <div class="flex items-center ml-3 sm:ml-0"><i class="fa-solid fa-phone-volume text-l"></i>&nbsp; <span class=" [@media(min-width:360px)_and_(max-width:433px)]:text-[12px]">01274-253206</span></div>
                         </div>
                         <div class=" flex items-center text-sm sm:text-"><i class="fa-solid fa-envelope-circle-check text-l"></i>&nbsp;globalpackerenterprises@gmail.com</div>
                       </div>
